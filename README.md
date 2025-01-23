@@ -4,7 +4,9 @@ The agorithm finds the minimum (with minimum weight) set of edges of a linked
 non-oriented graph, such that in any cycle of the graph there is at least one
 set from the given set.
 
-## Usage
+## Compilation and Usage
+
+### Using Vostok Oberon Compiler (Mac, Linux)
 
 1. Download [Vostok Oberon compiler](https://vostok.oberon.org).
 2. Execute `./run.sh` or:
@@ -12,6 +14,15 @@ set from the given set.
 ost to-bin 'VinniPuh.Do' vinnipuh -m .
 ./vinnipuh < 'in.txt' > 'out.txt'
 ```
+
+### Using Free Oberon Compiler (Windows, Linux)
+1. Download [Free Oberon compiler](https://free.oberon.org/download).
+2. Edit the last line in `VinniPuh.Mod` to look like this:
+```
+BEGIN Do END VinniPuh.
+```
+3. Compile using `fob VinniPuh.Mod`.
+4. See `run.sh` on how to run it.
 
 ## Input
 
